@@ -1,0 +1,44 @@
+body {
+    box-sizing: border-box;
+}
+*{ box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: black;
+}
+
+.header {
+    background-color: blue;
+}
+
+.content {
+    background-color: brown;
+}
+
+.footer {
+    background-color: cornflowerblue;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 40px 400px 40px;
+
+}
+
+.header {
+    grid-column: 2 / -1;
+}
+.content {
+    grid-column: 2 / -1;
+}
+.menu {
+    grid-row: 1 / 3;
+}
+.footer {
+    grid-column: 1 / -1;
+}
